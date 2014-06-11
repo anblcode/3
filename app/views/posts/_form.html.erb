@@ -2,7 +2,7 @@
 <%= link_to 'Atrás', posts_path %>
 
 <h1>Nuevo/Editar post</h1>
-<%= form_for :post do |f| %>
+<%= form_for @post do |f| %>
 
 	<% if @post.errors.any? %>
 		<div id="errorExplanation">
